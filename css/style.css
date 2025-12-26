@@ -423,6 +423,7 @@ body::-webkit-scrollbar-thumb {
 .banner__emoji {
   width: 72px;
   height: 72px;
+  flex-srink: 0;
 }
 .banner__img {
   position: relative;
