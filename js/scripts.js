@@ -60,22 +60,22 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const stars = document.querySelectorAll('.banner__star');
 
-  // stars.forEach(star => {
-  //   function flicker() {
-  //     const intensity = Math.random();
+  stars.forEach(star => {
+    function flicker() {
+      const intensity = Math.random();
 
-  //     star.style.opacity = 0.4 + intensity * 0.6;
-  //     star.style.transform = `
-  //       rotate(${getComputedStyle(star).getPropertyValue('--rotation')})
-  //       scale(${1 + intensity * 0.2})
-  //     `;
+      star.style.opacity = 0.4 + intensity * 0.6;
+      star.style.transform = `
+        rotate(${getComputedStyle(star).getPropertyValue('--rotation')})
+        scale(${1 + intensity * 0.2})
+      `;
 
-  //     const nextDelay = 300 + Math.random() * 2000;
-  //     setTimeout(flicker, nextDelay);
-  //   }
+      const nextDelay = 300 + Math.random() * 2000;
+      setTimeout(flicker, nextDelay);
+    }
 
-  //   setTimeout(flicker, Math.random() * 1000);
-  // });
+    setTimeout(flicker, Math.random() * 1000);
+  });
 
 });
 
